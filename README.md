@@ -22,6 +22,12 @@ pip install -r requirements.txt
 You can find detailed instructions for how to install this on Windows 10/11 [here (PDF)](docs/windows/install_win10_win11.pdf).
 
 Finally, run the full version (no audio length restrictions) of the app with parallel CPU/GPU enabled:
+'''''''''''''
+python app.py --whisper_implementation faster-whisper --input_audio_max_duration -1 --share True
+''''''''''''''
+
+
+
 ```
 python app.py --input_audio_max_duration -1 --server_name 127.0.0.1 --auto_parallel True
 ```
